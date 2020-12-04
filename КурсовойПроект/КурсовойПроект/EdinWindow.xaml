@@ -1,0 +1,36 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:КурсовойПроект.Windows"
+        xmlns:КурсовойПроект="clr-namespace:КурсовойПроект"
+    xmlns:Obselete="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="КурсовойПроект.Windows.EdinWindow"
+        mc:Ignorable="d"
+        Title="Окно добавления с единовременным платежом" Height="500" Width="800" Icon="icon.png">
+    <Grid>
+        <Button Content="Назад" x:Name="exit1" HorizontalAlignment="Left" Height="34" Margin="10,425,0,0" VerticalAlignment="Top" Width="92" Click="exit_Click"/>
+        <ComboBox x:Name="cmdkt" HorizontalAlignment="Left" Height="26" Margin="217,97,0,0" VerticalAlignment="Top" Width="518">
+        </ComboBox>
+        <Button Content="Добавить" x:Name="addbt1" HorizontalAlignment="Left" Height="34" Margin="690,425,0,0" VerticalAlignment="Top" Width="92" Click="addbt_Click"/>
+        <Label Content="Вид страховки*" HorizontalAlignment="Left" Margin="442,128,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="indstr" HorizontalAlignment="Left" Height="26" Margin="556,128,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label Content="Страхователь*" HorizontalAlignment="Left" Margin="108,97,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер договора*" HorizontalAlignment="Left" Margin="90,128,0,0" VerticalAlignment="Top"/>
+        <Label Content="Дата начала договора*" HorizontalAlignment="Left" Margin="60,159,0,0" VerticalAlignment="Top"/>
+        <Label Content="Дата окончания договора*" HorizontalAlignment="Left" Margin="38,190,0,0" VerticalAlignment="Top"/>
+        <Label Content="Начальная страховая премия*" HorizontalAlignment="Left" Margin="20,221,0,0" VerticalAlignment="Top"/>
+        <Label Content="Оплаченая премия*" HorizontalAlignment="Left" Margin="415,159,0,0" VerticalAlignment="Top"/>
+        <Label Content="Банк посредник" HorizontalAlignment="Left" Margin="433,190,0,0" VerticalAlignment="Top"/>
+        <Label Content="Премичание" HorizontalAlignment="Left" Margin="112,252,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="nomer_dogovora" HorizontalAlignment="Left" Height="26" Margin="217,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179"/>
+        <Obselete:MaskedTextBox Mask="99/99/9999" Name="date_start" HorizontalAlignment="Left" Height="26" Margin="217,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179"/>
+        <Obselete:MaskedTextBox Mask="99/99/9999" Name="date_finish" HorizontalAlignment="Left" Height="26" Margin="217,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179"/>
+        <TextBox Name="premiaNach"  HorizontalAlignment="Left" Height="26" Margin="217,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179"/>
+        <TextBox Name="premiaFin" HorizontalAlignment="Left" Height="26" Margin="556,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179"/>
+        <TextBox Name="bank" HorizontalAlignment="Left" Height="26" Margin="556,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179"/>
+        <TextBox Name="prim" HorizontalAlignment="Left" Height="70" Margin="217,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="518"/>
+
+
+    </Grid>
+</Window>
